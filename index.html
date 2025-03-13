@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Maquinarias Pesadas</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Catálogo de Maquinarias Pesadas</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#catalogo">Catálogo</a></li>
+                <li><a href="https://wa.me/1234567890" class="btn-adquirir">Adquirir por WhatsApp</a><li>
+                <li><a href="tel:+1234567890" class="btn-adquirir">Llamar</a><li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="catalogo" class="catalogo">
+        <div class="maquinaria">
+            <img src="img/1.jpeg" alt="Excavadora">
+            <h2>Excavadora Hyundai</h2>
+            <p>Excavadora  de alto rendimiento ideal para trabajos pesados.</p>
+            <ul>
+                <li>modelo: HX300</li>
+                <li>año: 2025</li>
+                <li></li>
+            </ul>
+            <button onclick="mostrarDetalles('detalles1')">Ver Detalles</button>
+            <div id="detalles1" class="detalles oculto">
+                <p>Incluye tecnología avanzada de control, cabina ergonómica y mayor eficiencia en el consumo de combustible.</p>
+                <button onclick="cerrarDetalles('detalles1')">Cerrar</button>
+            </div>
+
+            <button onclick="mostrarMas('galeria1')">Más</button>
+            <div id="galeria1" class="galeria oculto">
+                <img src="img/2.jpeg" alt="Excavadora vista lateral">
+                <img src="img/3.jpeg" alt="Excavadora en acción">
+            </div>
+        </div>
+    </section>
+    <section id="catalogo" class="catalogo">
+        <div class="maquinaria">
+            <img src="img/" alt="Excavadora">
+            <h2>Excavadora</h2>
+            <p>Excavadora  de alto rendimiento ideal para trabajos pesados.</p>
+            <ul>
+                <li>modelo: HX300</li>
+                <li>año: 2025</li>
+                <li></li>
+            </ul>
+            <button onclick="mostrarDetalles('detalles1')">Ver Detalles</button>
+            <div id="detalles1" class="detalles oculto">
+                <p>Incluye tecnología avanzada de control, cabina ergonómica y mayor eficiencia en el consumo de combustible.</p>
+                <button onclick="cerrarDetalles('detalles1')">Cerrar</button>
+            </div>
+
+            <button onclick="mostrarMas('galeria1')">Más</button>
+            <div id="galeria1" class="galeria oculto">
+                <img src="img/2.jpeg" alt="Excavadora vista lateral">
+                <img src="img/3.jpeg" alt="Excavadora en acción">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Catálogo de Maquinarias Pesadas. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
