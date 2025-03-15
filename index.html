@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Maquinarias Pesadas</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Catálogo de Maquinarias Pesadas</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#catalogo">Catálogo</a></li>
+                <li><a href="https://wa.me/944420523" class="btn-adquirir">Adquirir por WhatsApp</a></li>
+                <li><a href="tel:+51 944 420 523" class="btn-adquirir">Llamar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="catalogo" class="catalogo">
+        <div class="maquinaria">
+            <img src="img/EXCAVADORA1/1.jpeg" alt="Excavadora">
+            <h2>Excavadora Hyundai</h2>
+            <p>Excavadora de alto rendimiento ideal para trabajos pesados.</p>
+            <ul>
+                <li>Modelo: HX300</li>
+                <li>Año: 2025</li>
+            </ul>
+            <button onclick="mostrarDetalles('detalles1')">Ver Detalles</button>
+            <div id="detalles1" class="detalles oculto">
+                <p>Incluye tecnología avanzada de control, cabina ergonómica y mayor eficiencia en el consumo de combustible.</p>
+                <button onclick="cerrarDetalles('detalles1')">Cerrar</button>
+            </div>
+            <button onclick="mostrarMas('galeria1')">Más</button>
+            <div id="galeria1" class="galeria oculto">
+                <img src="img/EXCAVADORA1/2.jpeg" alt="Excavadora vista lateral">
+                <img src="img/EXCAVADORA1/3.jpeg" alt="Excavadora en acción">
+            </div>
+        </div>
+
+        <div class="maquinaria">
+            <img src="img/HOWO1/4.jpg" alt="Volquete Howo47">
+            <h2>Volquete Howo47</h2>
+            <p>Volquete de alto rendimiento ideal para trabajos pesados.</p>
+            <ul>
+                <li>Modelo: HowoA7</li>
+                <li>Caja: Manual de 10 velocidades y 2 reversa sincronizado</li>
+                <li>Tolva: Rockera 17 METRO CÚBICO</li>
+                <li>Año: 2021</li>
+                <li>Configuración: 6x4 cubo solar</li>
+            </ul>
+            <button onclick="mostrarDetalles('detalles2')">Ver Detalles</button>
+            <div id="detalles2" class="detalles oculto">
+                <p>Equipado con un potente motor que ofrece mayor rendimiento y durabilidad.</p>
+                <button onclick="cerrarDetalles('detalles2')">Cerrar</button>
+            </div>
+            <button onclick="mostrarMas('galeria2')">Más</button>
+            <div id="galeria2" class="galeria oculto">
+                <img src="img/HOWO1/5.jpg" alt="Volquete vista lateral">
+                <img src="img/HOWO1/6.jpg" alt="Volquete en acción">
+                <img src="img/HOWO1/7.jpg" alt="Volquete en acción">
+            </div>
+        </div>
+
+        <div class="maquinaria">
+            <img src="img/HOWO2/1.jpg" alt="volquete">
+            <h2>VOLQUETE MARCA HOWO </h2>
+            <p>Potente maquinaria para cargar materiales pesados.</p>
+            <ul>
+                <li>Modelo: Howo T7H</li>
+                <li>Año:  2024. Condiciones nueva </li>
+                </li>TOLVA:     Rockera 17 METRO CÚBICO</li>
+            </ul>
+            <button onclick="mostrarDetalles('detalles3')">Ver Detalles</button>
+            <div id="detalles3" class="detalles oculto">
+                <p>Con excelente capacidad de carga y eficiencia en el consumo de combustible.</p>
+                <button onclick="cerrarDetalles('detalles3')">Cerrar</button>
+            </div>
+            <button onclick="mostrarMas('galeria3')">Más</button>
+            <div id="galeria3" class="galeria oculto">
+                <img src="img/HOWO2/2.jpg" alt="Cargador frontal lateral">
+                <img src="img/HOWO2/3.jpg" alt="Cargador frontal en acción">
+                <img src="img/HOWO2/1.jpg" alt="Cargador frontal en acción">
+            </div>
+        </div>
+
+        <div class="maquinaria">
+            <img src="img/TRACTO REMOLCADOR1/1.jpg" alt="Tracto remolcador">
+            <h2>TRACTO REMOLCADOR </h2>
+            <p>Volquete de alto rendimiento ideal para trabajos pesados.</p>
+            <ul>
+                <li>MARCA: VOLVO </li>
+                <li>MODELO: FM-450 </li>
+                <li>TRACCION: 6X4 </li>
+                <li>Año: 2019</li>
+                <li>MODELO: 2020</li>
+            </ul>
+            <button onclick="mostrarDetalles('detalles4')">Ver Detalles</button>
+            <div id="detalles4" class="detalles oculto">
+                <p>Cuenta con un diseño robusto y sistema hidráulico avanzado.</p>
+                <button onclick="cerrarDetalles('detalles4')">Cerrar</button>
+            </div>
+            <button onclick="mostrarMas('galeria4')">Más</button>
+            <div id="galeria4" class="galeria oculto">
+                <img src="img/TRACTO REMOLCADOR1/2.jpg" alt="Retroexcavadora vista lateral">
+                <img src="img/TRACTO REMOLCADOR1/3.jpg" alt="Retroexcavadora en acción">
+                <img src="img/TRACTO REMOLCADOR1/4.jpg" alt="Retroexcavadora en acción">
+                <img src="img/TRACTO REMOLCADOR1/5.jpg" alt="Retroexcavadora en acción">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Catálogo de Maquinarias Pesadas. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="scrpt/script.js"></script>
+</body>
+</html>
