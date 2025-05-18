@@ -1,0 +1,196 @@
+/* ==================== GENERAL ==================== */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff; /* Fondo blanco limpio */
+    color: #333;
+}
+
+/* ==================== BOTÓN "ADQUIRIR" ==================== */
+.btn-adquirir {
+    display: inline-block;
+    background-color: #28a745;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-top: 15px;
+}
+
+/* ==================== HEADER Y NAV ==================== */
+header {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+nav ul li {
+    flex: 0 0 auto;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    background-color: #4CAF50;
+    border-radius: 25px;
+    transition: background 0.3s ease;
+    white-space: nowrap;
+}
+
+nav ul li a:hover {
+    background-color: #45a049;
+}
+
+/* ==================== CATÁLOGO ==================== */
+.catalogo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px 15px;
+    background-color: #fdfdfd;
+}
+
+.maquinaria {
+    background-color: #fff;
+    border: 2px solid #ffe600;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    max-width: 320px;
+    transition: transform 0.3s ease;
+}
+
+.maquinaria:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.maquinaria img {
+    width: 100%;
+    height: auto;
+    border-bottom: 3px solid #4CAF50;
+    max-height: 200px;
+    object-fit: contain;
+    background-color: #f9f9f9;
+}
+
+/* ==================== TEXTOS ==================== */
+h2 {
+    color: #333;
+    margin-top: 10px;
+    font-size: 1.3rem;
+    border-bottom: 2px solid #ffe600;
+    padding-bottom: 5px;
+}
+
+p, li {
+    margin: 5px 0;
+    font-size: 0.95rem;
+}
+
+/* ==================== BOTONES ==================== */
+button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 4px 8px;
+    font-size: 0.85rem;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* ==================== DETALLES & GALERÍA ==================== */
+.detalles, .galeria {
+    background-color: #f7f7f7;
+    border-top: 2px solid #ffe600;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 0 0 12px 12px;
+    display: none;
+}
+
+.detalles:not(.oculto), .galeria:not(.oculto) {
+    display: block;
+}
+
+.galeria img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 5px;
+    border: 2px solid #ccc;
+}
+
+/* ==================== FOOTER ==================== */
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 30px;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* ==================== RESPONSIVE ==================== */
+@media (max-width: 768px) {
+    header {
+        font-size: 0.95rem;
+        padding: 1rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .catalogo {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 10px;
+    }
+
+    .maquinaria {
+        width: 90%;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    .btn-adquirir {
+        font-size: 15px;
+        padding: 10px 20px;
+    }
+}
