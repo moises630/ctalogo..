@@ -1,0 +1,293 @@
+/* ==================== RESET ==================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* ==================== HEADER ==================== */
+header {
+    background: #000;
+    color: #fff;
+    padding: 2rem 1rem;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+header h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+nav ul {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 10px 22px;
+    background: #28a745;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 30px;
+    transition: all .3s ease;
+}
+
+nav ul li a:hover {
+    background: #1f8a38;
+    transform: translateY(-2px);
+}
+
+/* ==================== CATÁLOGO ==================== */
+.catalogo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+    padding: 40px 20px;
+    gap: 25px;
+}
+
+.maquinaria {
+    background: #fff;
+    border-radius: 18px;
+    border: 2px solid #e0e0e0;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.12);
+    padding: 20px;
+    text-align: center;
+    transition: all .3s ease;
+}
+
+.maquinaria:hover {
+    box-shadow: 0 6px 25px rgba(0,0,0,0.18);
+    transform: translateY(-5px);
+}
+
+.maquinaria img {
+    width: 100%;
+    max-height: 220px;
+    object-fit: contain;
+    border-radius: 12px;
+    background: #fafafa;
+    border: 2px solid #ddd;
+}
+
+.maquinaria h2 {
+    font-size: 1.3rem;
+    margin: 15px 0 8px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #28a745;
+}
+
+.maquinaria p, .maquinaria li {
+    font-size: 0.95rem;
+    margin: 5px 0;
+}
+
+/* ==================== BOTONES ==================== */
+button {
+    padding: 8px 16px;
+    border: none;
+    background: #28a745;
+    color: #fff;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+button:hover {
+    background: #1f8a38;
+    transform: scale(1.05);
+}
+
+.btn-adquirir {
+    display: inline-block;
+    background: #000;
+    color: #0f0;
+    padding: 12px 25px;
+    margin-top: 12px;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: all .3s ease;
+    text-decoration: none;
+}
+
+.btn-adquirir:hover {
+    background: #111;
+    transform: translateY(-2px);
+}
+
+/* ==================== DETALLES & GALERÍA ==================== */
+.detalles, .galeria {
+    background: #f0f0f0;
+    border-radius: 12px;
+    padding: 15px;
+    margin-top: 10px;
+    display: none;
+    border-left: 4px solid #28a745;
+}
+
+.galeria img {
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+}
+
+.detalles:not(.oculto), .galeria:not(.oculto) {
+    display: block;
+}
+
+/* ==================== FOOTER ==================== */
+footer {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 1.4rem 0;
+    margin-top: 35px;
+    font-size: 0.95rem;
+}
+
+/* ==================== RESPONSIVE ==================== */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.4rem;
+    }
+
+    nav ul li a {
+        padding: 8px 18px;
+    }
+
+    .maquinaria h2 {
+        font-size: 1.15rem;
+    }
+}
+/* ==================== FONDO ANIMADO CON PARTÍCULAS (OPCIÓN 2) ==================== */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, #1a1a1a, #000000);
+    z-index: -3;
+}
+
+/* Partículas */
+body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><circle cx="3" cy="3" r="3" fill="white" opacity="0.7"/></svg>');
+    background-size: 8px 8px;
+    animation: moverParticulas 25s linear infinite;
+    opacity: 0.3;
+    z-index: -2;
+}
+
+@keyframes moverParticulas {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(-500px, -500px); }
+}
+
+
+/* ==================== CAPA DE BRILLO PREMIUM ==================== */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, rgba(0,0,0,0.9), rgba(30,30,30,0.95));
+    z-index: -4;
+}
+
+/* Partículas grandes CAT estilo premium */
+.particles-layer {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    pointer-events: none;
+    z-index: -1;
+    background-image: radial-gradient(circle, rgba(255,215,0,0.4) 1px, transparent 1px);
+    background-size: 120px 120px;
+    animation: moverParticulasGrandes 35s linear infinite;
+    opacity: 0.25;
+}
+
+@keyframes moverParticulasGrandes {
+    0% { transform: translate(0,0); }
+    100% { transform: translate(600px, 600px); }
+}
+
+/* Efecto CAT iluminación en tarjetas */
+.maquinaria {
+    position: relative;
+    overflow: hidden;
+}
+
+.maquinaria::before {
+    content: "";
+    position: absolute;
+    top: 0; left: -100%;
+    width: 100%; height: 100%;
+    background: linear-gradient(120deg, rgba(255,255,255,0.0), rgba(255,255,255,0.15), rgba(255,255,255,0.0));
+    transform: skewX(-20deg);
+    animation: shine 4.5s infinite;
+}
+
+@keyframes shine {
+    0% { left: -100%; }
+    60% { left: 150%; }
+    100% { left: 150%; }
+}
+
+/* Sombra premium CAT */
+.maquinaria {
+    box-shadow: 0 6px 25px rgba(255,215,0,0.15);
+}
+
+/* Botón ADQUIRIR versión CORPORATIVA CAT */
+.btn-adquirir {
+    background: #ffce00;
+    color: #000;
+    border: 2px solid #000;
+    box-shadow: 0 0 12px rgba(255,200,0,0.5);
+}
+
+.btn-adquirir:hover {
+    background: #e0b700;
+    box-shadow: 0 0 18px rgba(255,200,0,0.6);
+    transform: scale(1.07);
+}
+
+/* Mejor estructura visual CAT */
+h2 {
+    color: #111;
+    border-bottom: 2px solid #ffce00;
+    font-weight: 700;
+}
+
+/* Galería estilo profesional */
+.galeria img {
+    border: 3px solid #ffce00;
+    background: #111;
+}
